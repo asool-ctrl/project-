@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Art Gallery</title>
+   
+<style>
+  body {
+    background-color: #1A1A1A;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #F0F0F0;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    flex-wrap: wrap; 
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nav-links a {
+    color: #F0F0F0;
+    text-decoration: none; 
+    font-size: 12px;
+  }
+
+  .nav-links a:hover {
+    text-decoration: underline; 
+    color: #FFD700;            
+  }
+
+  .btn {
+    padding: 5px 12px;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    font-size: 11px;
+    cursor: pointer;
+  }
+
+  .page-title {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 28px;
+  }
+
+  .dark {
+    background: #2B2B2B;
+    width: 80%;
+    margin: auto;
+    min-height: 200px;
+    margin-bottom: 40px;
+    color: #D0D0D0;
+    border-radius: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .light {
+    background: #CFCFCF;
+    width: 80%;
+    margin: 40px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .light img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .caption {
+    color: black;
+    font-size: 16px;
+    margin-top: 8px;
+    font-weight: bold;
+  }
+
+  .two-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 60px auto 120px auto;
+    width: 80%;
+    flex-wrap: wrap; */
+  }
+
+  .small-light {
+    width: 260px;
+    background: #CFCFCF;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .small-light img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #828282;
+  }
+
+  .footer-left h3 {
+    color: #F0F0F0;
+  }
+
+  .icons span {
+    margin-right: 10px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+  }
+
+  .footer-links p {
+    margin: 4px 0;
+  }
+
+  /* 📱 Media Queries */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .page-title {
+      font-size: 22px;
+    }
+
+    .dark, .light {
+      width: 95%;
+      font-size: 16px;
+    }
+
+    .two-boxes {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .small-light {
+      width: 90%;
+    }
+
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-links {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Art Gallery</div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Course</a>
+      <a href="#">Artist</a>
+      <a href="#">Blog</a>
+      <a href="#">About</a>
+      <button class="btn">Sign In</button>
+    </nav>
+  </header>
+
+  <!-- TITLE -->
+  <h1 class="page-title"><u>How did paint?</u></h1>
+
+  <!-- DARK SECTION -->
+  <section class="dark">
+    <h2>
+      Each painting in the exhibition reflects a unique feeling and its own story; 
+      it is not merely a difference in materials or colors, but rather an artistic journey 
+      pulsating with the emotions and personal experiences that the artist carried while creating it.
+    </h2>
+  </section>
+
+  <!-- MID LIGHT BOX WITH IMAGE + CAPTION -->
+  <section class="light">
+    <div class="image-box">
+      <img src="photo3.jpg.jpg" alt="Artwork 3">
+      <p class="caption">Starry Night</p>
+    </div>
+  </section>
+
+  <!-- BIG DARK BOX AGAIN -->
+  <section class="dark">
+    <h2><i>
+      The painting 'The Starry Night' by Van Gogh is a brilliant example of his creative use of oil paints on canvas, employing the thick brushstroke technique known as Impasto. He applied the paint in bold, swirling strokes, allowing the sky to pulse with movement and energy, while the twinkling stars and swirling patterns seem to dance above the quiet village. This technique not only creates a visually striking scene but also conveys the artist’s deep inner emotions—each brushstroke reflecting Van Gogh’s feelings of anxiety, hope, and beauty—inviting the viewer to experience the moment with all its artistic and emotional depth.
+    </i></h2>
+  </section>
+
+  <!-- TWO SMALL LIGHT BOXES WITH IMAGES -->
+  <div class="two-boxes">
+    <div class="small-light">
+      <img src="photo2.jpg.jpg" alt="Artwork 2">
+    </div>
+    <div class="small-light">
+      <img src="photo1.jpg.jpg" alt="Artwork 1">
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-left">
+      <h3>Site name</h3>
+      <div class="icons">
+        <span>📘</span>
+        <span>📸</span>
+        <span>▶</span>
+        <span>📌</span>
+      </div>
+    </div>
+    <div class="footer-links">
+      <div>
+        <p>Topic</p>
+        <p>Page</p>
+        <p>Page</p>
+        <p>Page</p>
+      </div>
+      <div>
+        <p>Topic</p>
+        <p>Page</p>
+        <p>Page</p>
+        <p>Page</p>
+      </div>
+      <div>
+        <p>Topic</p>
+        <p>Page</p>
+        <p>Page</p>
+        <p>Page</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
